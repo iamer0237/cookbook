@@ -34,6 +34,7 @@ class App extends React.Component {
             <div className='wrapper'>
               <Posts posts={this.state.articles} />
             </div>
+            
           </main>
         </div>
       </div>
