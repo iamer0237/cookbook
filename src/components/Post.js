@@ -36,7 +36,7 @@ const Post = ({ article }) => {
                             return (
                                 <div className='flex'>
                                     {row.content.map((col) => {
-                                        console.log(col);
+                                        /*console.log(col);*/
                                         return <p className='font'> {col.content[0].content[0].value}</p>;
                                     })}
                                 </div>

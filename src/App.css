@@ -17,6 +17,7 @@ body {
 }
 .recipetitle_main h2 {
   font-size: 40px;
+  text-shadow: 5px 5px 4px #bab6b6;
 }
 
 .recipetitle_main p {
@@ -89,3 +90,39 @@ height: 20px;
 position: absolute;
 background-color: black;
 } */
+.footer{
+  
+  margin-top: 1rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.social{
+  height:2rem;
+  background-color: #d561ac;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social li{
+  list-style: none;
+  margin-left: 1rem;
+  margin-right:1rem;
+}
+.intro{
+    background-color: whitesmoke;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding-left: 3rem;
+    column-gap: 1rem;
+}
+.signUp-btn{
+  background-color: #f08fce;
+  border-radius:20px;
+}
+.signUp-text{
+  border-style: dotted;
+  border-color: #f08fce;
+  border-radius: 5px;
+}

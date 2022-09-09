@@ -1,17 +1,19 @@
 import React from 'react'
 import './App.css';
 import { client } from './client';
-import Posts from './components/Posts'
+import Posts from './components/Posts';
+import Footer from './components/Footer';
+
 
 class App extends React.Component {
   state = {
     articles: []
   }
-
-  componentDidMount() {
+    
+   componentDidMount() {
     client.getEntries()
       .then((response) => {
-        console.log(response)
+        /*console.log(response)*/
         this.setState({
           articles: response.items
         })
@@ -36,6 +38,9 @@ class App extends React.Component {
             </div>
             
           </main>
+          <footer>
+            <div className="footer"><Footer /></div>
+          </footer>
         </div>
       </div>
     );
